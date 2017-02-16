@@ -1,0 +1,361 @@
+body {
+  margin-right: 50px;
+  margin-left: 50px;
+  font-family: Omnes, sans-serif;
+  color: #000;
+  font-size: 100%;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+h1 {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.nav-wrap {
+  display: block;
+  background-color: transparent;
+}
+
+.nav-brand {
+  margin-left: -10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 0px;
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  -webkit-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+}
+
+.nav-brand:hover {
+  opacity: 0.65;
+}
+
+.nav-menu {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.nav-link {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 20px;
+  -webkit-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  opacity: 0.65;
+}
+
+.nav-link.w--current {
+  color: rgba(0, 0, 0, .65);
+}
+
+.nav-link.w--current:hover {
+  opacity: 1;
+}
+
+.container {
+  display: block;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+.container.nav-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container.footer {
+  margin-top: 75px;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.text-link {
+  display: inline-block;
+  margin-right: 20%;
+  padding-right: 25px;
+  background-image: url('../images/right-arrow-black.svg');
+  background-position: 100% 70%;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  -webkit-transition: padding 200ms linear, opacity 200ms linear;
+  transition: padding 200ms linear, opacity 200ms linear;
+  color: #000;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  padding-right: 30px;
+  opacity: 0.65;
+}
+
+.about-text {
+  display: inline-block;
+  max-width: 700px;
+  margin-bottom: 75px;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.form-wrapper {
+  width: 55%;
+  margin-bottom: 75px;
+  float: right;
+  box-shadow: 8px 8px 50px -9px grey;
+}
+
+.contact-text {
+  width: 35%;
+  margin-bottom: 75px;
+  float: left;
+}
+
+.background {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  background-image: -webkit-linear-gradient(318deg, #f3e7e9, #e3eeff);
+  background-image: linear-gradient(132deg, #f3e7e9, #e3eeff);
+}
+
+.form-warning {
+  width: 100%;
+  margin-bottom: 35px;
+  font-size: 0.9rem;
+}
+
+.form-field {
+  width: 47%;
+  margin-bottom: 30px;
+  padding-left: 0px;
+  border-width: 0px 0px 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #000;
+  background-color: transparent;
+  -webkit-transition: border 300ms linear;
+  transition: border 300ms linear;
+  color: #000;
+  font-size: 1.15rem;
+}
+
+.form-field:focus {
+  border-bottom-color: rgba(0, 0, 0, .3);
+}
+
+.form-field.text-area {
+  width: 100%;
+  min-height: 150px;
+}
+
+.form-field.honeypot {
+  display: none;
+}
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+}
+
+.form-btn {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 1px solid #000;
+  background-color: transparent;
+  -webkit-transition: background-color 300ms linear, color 300ms linear;
+  transition: background-color 300ms linear, color 300ms linear;
+  color: #000;
+  font-weight: 500;
+}
+
+.form-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.form-thank-message {
+  width: 55%;
+  margin-bottom: 75px;
+  padding: 70px 45px;
+  float: right;
+  border: 1px solid #000;
+  box-shadow: 8px 8px 50px -9px grey;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 2.7rem;
+    line-height: 3.7rem;
+  }
+  .about-text {
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    font-size: 2rem;
+    line-height: 2.9rem;
+  }
+  .nav-brand {
+    max-width: 125px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+  }
+  .nav-link {
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+  .container.nav-container {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .about-text {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .contact-text {
+    width: 100%;
+  }
+  .form-thank-message {
+    width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .nav-link {
+    padding: 10px;
+  }
+  .form-field {
+    width: 100%;
+    margin-bottom: 8%;
+  }
+}
+
+@font-face {
+  font-family: 'Omnes';
+  src: url('../fonts/omnes_light-webfont.woff') format('woff'), url('../fonts/omnes_light-webfont.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Omnes';
+  src: url('../fonts/omnes-semibold-webfont.woff') format('woff'), url('../fonts/omnes-semibold-webfont.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Omnes';
+  src: url('../fonts/omnes-regular-webfont.woff') format('woff'), url('../fonts/omnes-regular-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Omnes';
+  src: url('../fonts/omnes-medium-webfont.woff') format('woff'), url('../fonts/omnes-medium-webfont.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Omnes';
+  src: url('../fonts/omnes-bold-webfont.woff') format('woff'), url('../fonts/omnes-bold-webfont.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
