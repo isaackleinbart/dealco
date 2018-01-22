@@ -262,6 +262,10 @@ a {
   text-align: center;
 }
 
+.from-warning-link {
+  color: #000;
+}
+
 @media (max-width: 991px) {
   h1 {
     font-size: 2.7rem;
